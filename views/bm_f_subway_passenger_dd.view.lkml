@@ -54,7 +54,7 @@ view: bm_f_subway_passenger_dd {
   measure: sunsusong_cnt {
     type: number
     label: "순수송인원수"
-    sql: ${TABLE}.abs(sunsusong_cnt) ;;
+    sql: ${TABLE}.sunsusong_cnt ;;
   }
 
   dimension: time_gb_cd {
