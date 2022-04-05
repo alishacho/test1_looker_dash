@@ -52,7 +52,7 @@ view: bm_f_subway_passenger_dd {
   }
 
   measure: sunsusong_cnt {
-    type: number
+    type: string
     label: "순수송인원수"
     sql: ${TABLE}.sunsusong_cnt ;;
   }
