@@ -20,19 +20,19 @@ view: bm_f_subway_passenger_dd {
   measure: get_cnt {
     type: sum
     label: "총승차인원수"
-    sql: ${TABLE}.get_cnt ;;
+    sql: ${TABLE}.get_cnt/10000 ;;
   }
 
   measure: get_off_cnt {
     type: sum
     label: "총하차인원수"
-    sql: ${TABLE}.get_off_cnt ;;
+    sql: ${TABLE}.get_off_cnt/10000 ;;
   }
 
   measure: moving_passenger_cnt {
     type: sum
     label: "유동인원수"
-    sql: ${TABLE}.moving_passenger_cnt ;;
+    sql: ${TABLE}.moving_passenger_cnt/10000 ;;
   }
 
   dimension: passenger_type_gb_cd {
@@ -54,7 +54,7 @@ view: bm_f_subway_passenger_dd {
   measure: sunsusong_cnt {
     type: number
     label: "순수송인원수"
-    sql: sum(abs(${TABLE}.sunsusong_cnt)) ;;
+    sql: sum(abs(${TABLE}.sunsusong_cnt/10000)) ;;
   }
 
   dimension: time_gb_cd {

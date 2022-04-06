@@ -5,7 +5,7 @@ include: "/views/**/*.view"
 
 datagroup: alisha_looker_dash1_default_datagroup {
   sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "24 hour"
 }
 
 persist_with: alisha_looker_dash1_default_datagroup
