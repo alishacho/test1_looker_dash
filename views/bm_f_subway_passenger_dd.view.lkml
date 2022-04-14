@@ -67,10 +67,10 @@ view: bm_f_subway_passenger_dd {
     sql: 1 ;;
     html: <p style =
               "color: #000000;
-              font-size:70%;
-              text-align:left">
+              font-size:30%;
+              text-align:center">
               기간 : {% if _filters['dt_date']%}
-                          {{_filters['date_start dt_date']}}
+                          {{_filters['dt_date']}}
                           {% else %} 전체 {% endif %}
               &nbsp;&nbsp;&nbsp;
               승객유형 : {% if _filters['bm_d_passenger_type_cd.passenger_type']%}
